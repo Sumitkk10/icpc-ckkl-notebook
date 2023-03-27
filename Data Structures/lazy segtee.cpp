@@ -1,5 +1,5 @@
 void build(int vertex, int l, int r){
-    lazy[vertex] = 0;
+    lazy[vertex] = 0; // size of lazy[] and va[] should be 4*N
     if(l > r)
         return;
     if(l == r){
