@@ -1,8 +1,9 @@
 /*
-impl details : 
-maintain a vector of CHT's
-to find maximum, slopes should be in increasing order.
-merge them toghther when same size 
+dp[i] = min/max(dp[i], dp[j] + C(j...i));
+where dp[j] + C(j + 1..i) can be written as mx + c
+like C(j..i) = pre[j] * pre[i] + dp[j]
+To find maximums, gradients must be sorted in increasing order.
+To find minimums, gradients must be sorted in decreasing order.
 */
 struct Line{
     int m, c;
