@@ -1,8 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define int long long
-const int MOD = 1e9 + 7;
-
 vector<int> combine (int n, vector<int> &a, vector<int> &b, vector<int> &tr) {
   vector<int> res(n * 2 + 1, 0);
   for (int i = 0; i < n + 1; i++) {
