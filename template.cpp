@@ -3,8 +3,7 @@
 #include <ext/pb_ds/tree_policy.hpp>
 #pragma GCC optimize("O3")
 #pragma GCC optimize("Ofast")
-#pragma GCC target("avx2, sse, sse2, sse3, ssse3, sse4,
-popcnt, abm, mmx, avx, tune=native")
+#pragma GCC target("avx2, sse, sse2, sse3, ssse3, sse4, popcnt, abm, mmx, avx, tune=native")
 #define int long long
 #define F first
 #define S second
