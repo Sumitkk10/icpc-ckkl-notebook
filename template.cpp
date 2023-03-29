@@ -36,6 +36,7 @@ void solve(){
   <set_name>.order_of_key(k) == It returns to the number of items 
   that are strictly smaller than our item k in O(logn) time. */
   // unordered_map<long long, int, custom_hash> safe_map;
+  // shuffle(res.begin(), res.end(), rng);
 }
 int32_t main(){
 	srand(chrono::steady_clock::now().time_since_epoch().count());
