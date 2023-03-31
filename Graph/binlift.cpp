@@ -1,5 +1,5 @@
 int dp[N][22], n, lvl[N];
-
+// initiliaze dp with -1
 void dfs(int source, int par, int level){
 	dp[source][0] = par;
 	lvl[source] = level;
@@ -7,7 +7,6 @@ void dfs(int source, int par, int level){
 		if(k != par)
 			dfs(k, source, level + 1);
 }
-
 void init(){
 	dfs(1, -1, 0);
 	for(int i = 1; i <= 21; ++i)
@@ -15,7 +14,6 @@ void init(){
 			if(dp[j][i - 1] != -1)
 				dp[j][i] = dp[dp[j][i - 1]][i - 1];
 }
-
 int LCA(int u, int v){
 	if(lvl[u] > lvl[v]) swap(u, v);
 	int d = lvl[v] - lvl[u];
